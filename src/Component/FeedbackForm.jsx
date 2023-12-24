@@ -54,13 +54,15 @@ function FeedbackForm() {
             // console.log(newFeedback);
             if(feedBackEdit.edit === true){
                 updateFeedback(feedBackEdit.item.id, newFeedback)
+                
+                
             }
             else{
                 AddFeedback(newFeedback);
             }
+            setText(''); 
         } 
 
-        setText(''); 
              
     }
    
